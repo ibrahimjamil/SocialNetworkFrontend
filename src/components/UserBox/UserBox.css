@@ -1,0 +1,27 @@
+.user-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) 0;
+  padding-right: var(--spacing-sm);
+  overflow-x: hidden;
+}
+
+.user-name {
+  max-width: 165px;
+  word-wrap: break-word;
+}
+
+.button-group {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.user-button {
+  padding: 4px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}

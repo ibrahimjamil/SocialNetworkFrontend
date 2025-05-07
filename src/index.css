@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --primary: #4267b2;
+  --font-dark: #050505;
+  --font-light: #606164;
+  --white: #fffbfb;
+  --grey: #f0eef1;
+  --grey-hover: #d8d7db;
+  --grey-active: #ccccd0;
+  --border-radius: 8px;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  margin-bottom: 50px;
+  background-color: var(--grey);
+  color: var(--font-dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+button,
+input {
+  border: none;
+  color: inherit;
+  font-weight: inherit;
+}
+
+button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--grey-hover);
+}
+
+button:active {
+  background-color: var(--grey-active);
+  transform: scale(0.98);
+}
+
+input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 50px;
+  background-color: var(--grey);
+  font-weight: 400;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.box {
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 40px;
+  border-radius: 50px;
+  background-color: var(--grey);
+}
+
+.scroll {
+  max-height: 226px;
+  overflow-y: scroll;
+}
+
+.scroll-container ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scroll-container ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroll-container ::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  width: 10px;
+  min-height: 60px;
+  background-color: var(--grey);
+}
+
+.scroll-container ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--grey-hover);
+}
